@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>sign Up &Login </title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="box" id="signupBox">
+            <h2> Sign Up</h2>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="pwd" placeholder="Create Password">
+            <input type="password" id="cpwd" placeholder="Confirm Password">
+
+            <!-- Action Button -->
+             <div class="index">
+                <a href="../index.html" target="_blank">
+                    <button onclick="signup()">Sign Up</button>
+                </a>
+             </div>
+
+            <p class="msg" id="signupMsg"></p>
+            <p class="link" onclick="showLogin()">Already have an account? Login</p>
+        </div>
+        <div class="box" id="loginBox" style="display:none;">
+            <h2>Login</h2>
+            <input type="text" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPwd" placeholder="Password">
+
+            <!-- Action Button -->
+             <div class="index">
+                <a href="../index.html" target="_blank">
+                    <button onclick="login()">Login</button>
+                </a>
+             </div>
+
+            <p class="msg" id="loginMsg"></p>
+            <p class="link" onclick="showSignup()">Create an account</p>
+        </div>
+    <script src="login.js"></script>
+    </body>
+</html>
